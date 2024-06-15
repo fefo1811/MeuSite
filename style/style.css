@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: #FFDD55;
+    --header-bg: #000000;
+
+    --text-color-primary: #ffffff;
+    --text-color-secundary: #000000;
+    --text-color-tertiary: #18191F;
+    --text-color-quartiary: #474A57;
+
+    --font-main: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Início estilização Header */
+#cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    height: 113px;
+    background-color: var(--header-bg);
+    color: var(--text-color-primary);
+    font-size: 3em;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-width: 919px;
+}
+
+#cabecalho #logo {
+    display: inline;
+    margin-left: 61px;
+    background: var(--background);
+    border-radius: 30px;
+    border: 2px solid #000000;
+    box-shadow: 5px 4px #ffffff;
+}
+
+#cabecalho #logo .icon {
+    padding: 12px 13px;
+    font-weight: 900;
+    color: var(--text-color-secundary);
+}
+
+#cabecalho #navegacao {
+    float: right;
+    font-size: 0.5em;
+    width: 674px;
+    /* margin-top: 20px;
+    margin-right: 75px; */
+}
+
+#navegacao {
+    display: flex;
+    width: 674px;
+}
+
+#navegacao li {
+    cursor: pointer;
+}
+
+#navegacao li a {
+    line-height: 2.5em;
+    padding: 0 1em;
+    color: var(--text-color-primary);
+    font-weight: 600;
+}
+
+#navegacao li a:hover {
+    color: #FFDD55;
+}
+
+/* Fim estilização Header */
+
+/* Início Seção Inicial */
+
+#secao-inicial {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 86.5vh;
+    min-width: 1218px;
+}
+
+#secao-inicial #links h1 {
+    margin-bottom: 0;
+    font-size: 4em;
+    color: var(--text-color-tertiary);
+}
+
+#secao-inicial #links p {
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 1.5em;
+    color: var(--text-color-quartiary);
+}
+
+#secao-inicial #links a {
+    position: relative;
+    font-size: 2em;
+    color: var(--text-color-primary);
+    background: #000000;
+    border-radius: 15px;
+    padding: 12px 31px;
+    box-shadow: 5px 5px #00C6AE;
+    margin: 5px 18px 0px 0px;
+}
+
+#secao-inicial img {
+    margin-top: 150px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;
+    border-radius: 10px;
+}
+
+#secao-inicial .contato:hover, .curriculo:hover {
+    bottom: 10px;
+    transition: bottom;
+}
+
+/* Fim Seção Inicial */
+
+/* Início Seção Sobre Mim */
+
+#secao-sobre-mim{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+    min-height: 86.5vh;
+    min-width: 1218px;
+}
+
+#secao-sobre-mim #informacoes {
+    height: 672px;
+    width: 1250px;
+    background-color: #106ee8;
+}
+
+/* Fim Seção Sobre Mim */
