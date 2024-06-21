@@ -18,6 +18,10 @@ body {
     height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -111,7 +115,9 @@ li {
     color: var(--text-color-quartiary);
 }
 
-#secao-inicial #links a {
+#secao-inicial #links a,
+#secao-sobre-mim #informacoes a
+{
     position: relative;
     font-size: 2em;
     color: var(--text-color-primary);
@@ -129,7 +135,9 @@ li {
     border-radius: 10px;
 }
 
-#secao-inicial .contato:hover, .curriculo:hover {
+#secao-inicial .contato:hover, #secao-inicial .curriculo:hover,
+#secao-sobre-mim #informacoes .contato:hover, #secao-sobre-mim #informacoes .curriculo:hover
+{
     bottom: 10px;
     transition: bottom;
 }
@@ -140,18 +148,57 @@ li {
 
 #secao-sobre-mim{
     height: 100vh;
+    min-height: 86.5vh;
+    min-width: 1218px;
+    padding-top: 100px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
-    min-height: 86.5vh;
-    min-width: 1218px;
 }
 
 #secao-sobre-mim #informacoes {
     height: 672px;
-    width: 1250px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 3.38rem;
     background-color: #106ee8;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+#secao-sobre-mim #links {
+    box-sizing: border-box;
+    padding-top: 30px;
+    margin-right: 56px;
+}
+
+#secao-sobre-mim #links h1 {
+    margin-bottom: 0;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+#secao-sobre-mim #links p {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+
+
+#secao-sobre-mim #foto {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+#secao-sobre-mim #foto img {
+    width: 385px;
+    height: 485px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Fim Seção Sobre Mim */
