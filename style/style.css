@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: var(--font-main);
+    font-family: var(--font-main) !important; 
     background-color: var(--background);
     height: 100vh;
 }
@@ -46,7 +46,7 @@ li {
     min-width: 919px;
 }
 
-#cabecalho #logo {
+#logo {
     display: inline;
     margin-left: 61px;
     background: var(--background);
@@ -55,7 +55,7 @@ li {
     box-shadow: 5px 4px #ffffff;
 }
 
-#cabecalho #logo .icon {
+.icon {
     padding: 12px 13px;
     font-weight: 900;
     color: var(--text-color-secundary);
@@ -125,6 +125,9 @@ li {
     border-radius: 15px;
     padding: 12px 31px;
     box-shadow: 5px 5px #00C6AE;
+}
+
+#secao-inicial #links a {
     margin: 5px 18px 0px 0px;
 }
 
@@ -139,7 +142,7 @@ li {
 #secao-sobre-mim #informacoes .contato:hover, #secao-sobre-mim #informacoes .curriculo:hover
 {
     bottom: 10px;
-    transition: bottom;
+    transition: bottom !important;
 }
 
 /* Fim Seção Inicial */
@@ -168,24 +171,29 @@ li {
     box-sizing: border-box;
 }
 
-#secao-sobre-mim #links {
+#secao-sobre-mim #dados {
     box-sizing: border-box;
     padding-top: 30px;
     margin-right: 56px;
 }
 
-#secao-sobre-mim #links h1 {
+#secao-sobre-mim #dados h1 {
     margin-bottom: 0;
     font-size: 64px;
     font-weight: 900;
 }
 
-#secao-sobre-mim #links p {
+#secao-sobre-mim #dados p {
     margin-top: 8px;
     font-size: 24px;
+    text-align: justify;
+    margin-bottom: 8px;
 }
 
-
+#secao-sobre-mim #informacoes a {
+    margin-right: 18px;
+    top: 28px;
+}
 
 #secao-sobre-mim #foto {
     display: flex;
@@ -202,3 +210,31 @@ li {
 }
 
 /* Fim Seção Sobre Mim */
+
+/* Início Seção Experiências */
+
+#secao-experiencias {
+    height: 100vh;
+    min-height: 86.5vh;
+    min-width: 1218px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secao-experiencias #bg-experiencias {
+    height: 672px;
+    width: 100%;
+    padding: 3.38rem;
+    background-color: #EB7711;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+
+.icon-light .navbar-toggler-icon {
+    color: #ffffff;
+}
