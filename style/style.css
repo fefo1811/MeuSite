@@ -132,4 +132,18 @@ li {
         margin-top: 50px;
     }
 }
+
+@media (max-width: 568px) {
+    #secao-inicial #foto img {
+        margin-top: 50px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #secao-inicial #foto img {
+        margin-top: 50px;
+        width: 511px !important;
+    }
+}
 /* Fim estilização Seção Inicial */
