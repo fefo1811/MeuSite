@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
     --background: #FFDD55;
     --header-bg: #000000;
@@ -10,24 +11,6 @@
     --text-color-quartiary: #474A57;
 
     --font-main: "Montserrat", sans-serif;
-}
-
-body {
-    font-family: var(--font-main) !important; 
-    background-color: var(--background);
-    height: 100vh;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
 }
 
 /* Início estilização Header */
@@ -85,65 +68,39 @@ li {
     font-weight: 600;
 }
 
-#navegacao li a:hover {
+#navegacao a:hover {
     color: #FFDD55;
 }
 
 /* Fim estilização Header */
 
 /* Início estilização Seção Inicial */
-#secao-inicial #titulo h1 {
-    margin-bottom: 0;
+
+    /* Tipografia da Seção */
+#home h1 {
+    font-weight: 900;
     font-size: 4em;
-    color: var(--text-color-tertiary);
+    color: #18191F;
 }
 
-#secao-inicial #titulo p {
-    margin-top: 0;
-    margin-bottom: 80px;
-    font-size: 1.5em;
-    color: var(--text-color-quartiary);
+#home p {
+    font-weight: 700;
+    font-size: 1.56em;
+    color: #474A57;
 }
+    /* Tipografia da Seção */
 
-#secao-inicial #titulo a,
-#secao-sobre-mim #informacoes a
-{
-    position: relative;
+#home .botoes-home {
     font-size: 2em;
     color: var(--text-color-primary);
     background: #000000;
-    border-radius: 15px;
-    padding: 12px 31px;
     box-shadow: 5px 5px #00C6AE;
+    margin-right: 20px;
 }
 
-#secao-inicial #titulo a {
-    margin: 5px 18px 0px 0px;
-}
-
-#secao-inicial #titulo img {
+#foto-perfil img {
     border: 2px solid #000000;
     box-shadow: 5px 5px #000000;
     border-radius: 10px;
-}
-
-@media (max-width: 1200px) {
-    #secao-inicial #foto img {
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 568px) {
-    #secao-inicial #foto img {
-        margin-top: 50px;
-        width: 250px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #secao-inicial #foto img {
-        margin-top: 50px;
-        width: 511px !important;
-    }
 }
 /* Fim estilização Seção Inicial */

@@ -1,0 +1,83 @@
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+    /* background-color: var(--background); */
+    background-color: #FFF2B3 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #home .btn {
+        font-size: 1em !important;
+    }
+
+    #home h1 {
+        font-size: 1.8em;
+    }
+    
+    #home p {
+        font-size: 1em;
+    }
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #apresentacao {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    #foto-perfil {
+        order: 1;
+    }
+
+    #home .btn {
+        font-size: 1.5em;
+        margin-right: 5px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #home h1 {
+        font-size: 3em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    #home .btn {
+        margin-bottom: 20px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
