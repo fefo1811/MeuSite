@@ -90,6 +90,11 @@
 }
     /* Tipografia da Seção */
 
+#home {
+    box-sizing: border-box;
+    height: 90%;
+}
+
 #home .botoes-home {
     font-size: 2em;
     color: var(--text-color-primary);
@@ -103,4 +108,5 @@
     box-shadow: 5px 5px #000000;
     border-radius: 10px;
 }
+
 /* Fim estilização Seção Inicial */

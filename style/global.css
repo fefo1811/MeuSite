@@ -24,8 +24,12 @@ li {
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    #home {
+        padding: 4rem !important; 
+    }
+
     #home .btn {
-        font-size: 1em !important;
+        font-size: 0.5em !important;
     }
 
     #home h1 {
@@ -40,7 +44,11 @@ li {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+    #home {
+        padding: 4rem;
+    }
+}
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -77,7 +85,11 @@ li {
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+    #home {
+        padding: 8rem;
+    }
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
