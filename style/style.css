@@ -77,25 +77,26 @@
 /* Início estilização Seção Inicial */
 
     /* Tipografia da Seção */
-#home h1 {
-    font-weight: 900;
-    font-size: 4em;
-    color: #18191F;
-}
-
-#home p {
-    font-weight: 700;
-    font-size: 1.56em;
-    color: #474A57;
-}
+    #home h1 {
+        /* font-weight: 900; */
+        /* font-size: 4em; */
+        color: #18191F;
+    }
+    
+    #home p {
+        /* font-weight: 700; */
+        /* font-size: 1.56em; */
+        color: #474A57;
+    }
     /* Tipografia da Seção */
 
 #home {
-    box-sizing: border-box;
-    height: 90%;
+    /* box-sizing: border-box; */
+    height: 100%;
+    border: 1px solid blue;
 }
 
-#home .botoes-home {
+a.botoes-home {
     font-size: 2em;
     color: var(--text-color-primary);
     background: #000000;
@@ -103,7 +104,13 @@
     margin-right: 20px;
 }
 
-#foto-perfil img {
+.btn:hover {
+    position: relative;
+    bottom: 5px;
+    background-color: none;
+}
+
+.foto-perfil {
     border: 2px solid #000000;
     box-shadow: 5px 5px #000000;
     border-radius: 10px;
