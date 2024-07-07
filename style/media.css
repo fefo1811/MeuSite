@@ -5,7 +5,7 @@
         margin-top: 4rem;
     }
 
-    .btn {
+    a.botoes-home {
         font-size: 0.9em !important;
     }
 
@@ -17,19 +17,54 @@
         font-weight: 900 !important;
         font-size: 1.8em;
     }
+
+    h2 {
+        font-size: 1.2em !important;
+    }
     
     p {
         font-size: 1em;
     }
 
+    .contato {
+        margin-right: 8px !important;
+    }
+
+    .padding-20 {
+        padding: 20px 0;
+    }
+
+    .centralizar {
+        text-align: center !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     #home {
         padding: 2rem;
-        margin: 90px 0
+        margin: 90px 0 0 0
     }
+
+    .centralizar {
+        text-align: center !important;
+    }
+
+    a.botoes-home {
+        font-size: 1.5em !important;
+    }
+    
+    .padding-20 {
+        padding: 20px 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    a.botoes-home {
+        font-size: 1.5em !important;
+    }
+
 }
 
 
@@ -42,18 +77,6 @@
     #foto-perfil {
         order: 1;
     }
-
-    /* .btn {
-        font-size: 0.9em !important;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-    
-    p {
-        font-size: 1em;
-    } */
 }
 
 
@@ -121,13 +144,10 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    /* #home h1 {
-        font-size: 3em;
-    } */
+
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 

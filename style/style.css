@@ -13,6 +13,10 @@
     --font-main: "Montserrat", sans-serif;
 }
 
+h1 {
+    font-weight: 900 !important;
+}
+
 /* Início estilização Header */
 #cabecalho {
     width: 100%;
@@ -92,8 +96,8 @@
 
 #home {
     /* box-sizing: border-box; */
-    height: 100%;
-    border: 1px solid blue;
+    /* height: 100%; */
+    /* border: 1px solid blue; */
 }
 
 a.botoes-home {
@@ -117,3 +121,11 @@ a.botoes-home {
 }
 
 /* Fim estilização Seção Inicial */
+
+/* ==== Início Sobre Mim ==== */
+.bg-sobre-mim {
+    background-color: #106EE8;
+    border-radius: 20px;
+    margin-top: 90px;
+}
+/* ==== Fim Sobre Mim ==== */
