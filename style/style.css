@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
     --background: #FFDD55;
     --header-bg: #000000;
@@ -12,22 +13,8 @@
     --font-main: "Montserrat", sans-serif;
 }
 
-body {
-    font-family: var(--font-main);
-    background-color: var(--background);
-    height: 100vh;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
+h1 {
+    font-weight: 900 !important;
 }
 
 /* Início estilização Header */
@@ -46,7 +33,7 @@ li {
     min-width: 919px;
 }
 
-#cabecalho #logo {
+#logo {
     display: inline;
     margin-left: 61px;
     background: var(--background);
@@ -55,7 +42,7 @@ li {
     box-shadow: 5px 4px #ffffff;
 }
 
-#cabecalho #logo .icon {
+.icon {
     padding: 12px 13px;
     font-weight: 900;
     color: var(--text-color-secundary);
@@ -85,120 +72,60 @@ li {
     font-weight: 600;
 }
 
-#navegacao li a:hover {
+#navegacao a:hover {
     color: #FFDD55;
 }
 
 /* Fim estilização Header */
 
-/* Início Seção Inicial */
+/* Início estilização Seção Inicial */
 
-#secao-inicial {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 86.5vh;
-    min-width: 1218px;
+    /* Tipografia da Seção */
+    #home h1 {
+        /* font-weight: 900; */
+        /* font-size: 4em; */
+        color: #18191F;
+    }
+    
+    #home p {
+        /* font-weight: 700; */
+        /* font-size: 1.56em; */
+        color: #474A57;
+    }
+    /* Tipografia da Seção */
+
+#home {
+    /* box-sizing: border-box; */
+    /* height: 100%; */
+    /* border: 1px solid blue; */
 }
 
-#secao-inicial #links h1 {
-    margin-bottom: 0;
-    font-size: 4em;
-    color: var(--text-color-tertiary);
-}
-
-#secao-inicial #links p {
-    margin-top: 0;
-    margin-bottom: 80px;
-    font-size: 1.5em;
-    color: var(--text-color-quartiary);
-}
-
-#secao-inicial #links a,
-#secao-sobre-mim #informacoes a
-{
-    position: relative;
+a.botoes-home {
     font-size: 2em;
     color: var(--text-color-primary);
     background: #000000;
-    border-radius: 15px;
-    padding: 12px 31px;
     box-shadow: 5px 5px #00C6AE;
-    margin: 5px 18px 0px 0px;
+    margin-right: 20px;
 }
 
-#secao-inicial img {
-    margin-top: 150px;
+.btn:hover {
+    position: relative;
+    bottom: 5px;
+    background-color: none;
+}
+
+.foto-perfil {
     border: 2px solid #000000;
     box-shadow: 5px 5px #000000;
     border-radius: 10px;
 }
 
-#secao-inicial .contato:hover, #secao-inicial .curriculo:hover,
-#secao-sobre-mim #informacoes .contato:hover, #secao-sobre-mim #informacoes .curriculo:hover
-{
-    bottom: 10px;
-    transition: bottom;
-}
+/* Fim estilização Seção Inicial */
 
-/* Fim Seção Inicial */
-
-/* Início Seção Sobre Mim */
-
-#secao-sobre-mim{
-    height: 100vh;
-    min-height: 86.5vh;
-    min-width: 1218px;
-    padding-top: 100px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#secao-sobre-mim #informacoes {
-    height: 672px;
-    width: 90%;
+/* ==== Início Sobre Mim ==== */
+.bg-sobre-mim {
+    background-color: #106EE8;
     border-radius: 20px;
-    padding: 3.38rem;
-    background-color: #106ee8;
-    display: flex;
-    flex-direction: row-reverse;
-    box-sizing: border-box;
+    margin-top: 90px;
 }
-
-#secao-sobre-mim #links {
-    box-sizing: border-box;
-    padding-top: 30px;
-    margin-right: 56px;
-}
-
-#secao-sobre-mim #links h1 {
-    margin-bottom: 0;
-    font-size: 64px;
-    font-weight: 900;
-}
-
-#secao-sobre-mim #links p {
-    margin-top: 8px;
-    font-size: 24px;
-}
-
-
-
-#secao-sobre-mim #foto {
-    display: flex;
-    align-items: center;
-    margin-right: 45px;
-}
-
-#secao-sobre-mim #foto img {
-    width: 385px;
-    height: 485px;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Fim Seção Sobre Mim */
+/* ==== Fim Sobre Mim ==== */

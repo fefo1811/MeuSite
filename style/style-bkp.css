@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: #FFDD55;
+    --header-bg: #000000;
+
+    --text-color-primary: #ffffff;
+    --text-color-secundary: #000000;
+    --text-color-tertiary: #18191F;
+    --text-color-quartiary: #474A57;
+
+    --font-main: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--font-main) !important; 
+    background-color: var(--background);
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Início estilização Header */
+#cabecalho {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    height: 113px;
+    background-color: var(--header-bg);
+    color: var(--text-color-primary);
+    font-size: 3em;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-width: 919px;
+}
+
+#logo {
+    display: inline;
+    margin-left: 61px;
+    background: var(--background);
+    border-radius: 30px;
+    border: 2px solid #000000;
+    box-shadow: 5px 4px #ffffff;
+}
+
+.icon {
+    padding: 12px 13px;
+    font-weight: 900;
+    color: var(--text-color-secundary);
+}
+
+#cabecalho #navegacao {
+    float: right;
+    font-size: 0.5em;
+    width: 674px;
+    /* margin-top: 20px;
+    margin-right: 75px; */
+}
+
+#navegacao {
+    display: flex;
+    width: 674px;
+}
+
+#navegacao li {
+    cursor: pointer;
+}
+
+#navegacao li a {
+    line-height: 2.5em;
+    padding: 0 1em;
+    color: var(--text-color-primary);
+    font-weight: 600;
+}
+
+#navegacao li a:hover {
+    color: #FFDD55;
+}
+
+/* Fim estilização Header */
+
+/* Início Seção Inicial */
+
+#secao-inicial {
+    /* height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 86.5vh;
+    min-width: 1218px; */
+
+
+    
+}
+
+#secao-inicial #links h1 {
+    margin-bottom: 0;
+    font-size: 4em;
+    color: var(--text-color-tertiary);
+}
+
+#secao-inicial #links p {
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 1.5em;
+    color: var(--text-color-quartiary);
+}
+
+#secao-inicial #links a,
+#secao-sobre-mim #informacoes a
+{
+    position: relative;
+    font-size: 2em;
+    color: var(--text-color-primary);
+    background: #000000;
+    border-radius: 15px;
+    padding: 12px 31px;
+    box-shadow: 5px 5px #00C6AE;
+}
+
+#secao-inicial #links a {
+    margin: 5px 18px 0px 0px;
+}
+
+#secao-inicial img {
+    margin-top: 150px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px #000000;
+    border-radius: 10px;
+}
+
+#secao-inicial .contato:hover, #secao-inicial .curriculo:hover,
+#secao-sobre-mim #informacoes .contato:hover, #secao-sobre-mim #informacoes .curriculo:hover
+{
+    bottom: 10px;
+    transition: bottom !important;
+}
+
+/* Fim Seção Inicial */
+
+/* Início Seção Sobre Mim */
+
+#secao-sobre-mim{
+    height: 100vh;
+    min-height: 86.5vh;
+    min-width: 1218px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secao-sobre-mim #informacoes {
+    height: 672px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 3.38rem;
+    background-color: #106ee8;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+#secao-sobre-mim #dados {
+    box-sizing: border-box;
+    padding-top: 30px;
+    margin-right: 56px;
+}
+
+#secao-sobre-mim #dados h1 {
+    margin-bottom: 0;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+#secao-sobre-mim #dados p {
+    margin-top: 8px;
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+#secao-sobre-mim #informacoes a {
+    margin-right: 18px;
+    top: 28px;
+}
+
+#secao-sobre-mim #foto {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+#secao-sobre-mim #foto img {
+    width: 385px;
+    height: 485px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Fim Seção Sobre Mim */
+
+/* Início Seção Experiências */
+
+#secao-experiencias {
+    height: 100vh;
+    min-height: 86.5vh;
+    min-width: 1218px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secao-experiencias #bg-experiencias {
+    height: 672px;
+    width: 100%;
+    padding: 3.38rem;
+    background-color: #EB7711;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+
+.icon-light .navbar-toggler-icon {
+    color: #ffffff;
+}
