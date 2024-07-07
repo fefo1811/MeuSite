@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+html, body {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
 
 body {
     font-family: "Roboto Condensed", sans-serif;
@@ -10,6 +17,39 @@ body {
     background: url('../image/fundo.png') no-repeat top right;
 }
 
+/* Header */
 .navbar-toggler {
     border: none;
 }
+
+.nav-link {
+    color: #25282B;
+}
+/* Header */
+
+/* Home */
+#home {
+    padding-top: 5.62rem;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.subtitulo {
+    color: #FF5876;
+}
+
+.btn-custom {
+    color: #fff;
+    background: #FF6464;
+    text-transform: uppercase;
+    padding: 10px 40px;
+}
+/* Home */
