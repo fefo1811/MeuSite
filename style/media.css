@@ -7,4 +7,19 @@
     #foto {
         order: 1;
     }
+
+    #home, #exp, #sobre-mim {
+        padding-top: 5.62rem;;
+        height: auto;
+    }
+
+    #exp {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .conteudo {
+        margin-top: 1rem;
+    }
 }

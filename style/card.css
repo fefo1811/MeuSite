@@ -1,0 +1,36 @@
+.card-container {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px;
+    border: 1px solid #7d7d7d;
+}
+
+.card-titulo {
+    border-bottom: black 1px solid;
+}
+
+.card-titulo h3 {
+    margin: 8px 0 0 0
+}
+
+.card-titulo h4 {
+    margin: 0;
+}
+
+.card-texto {
+    padding: 0.5rem 0;
+}
+
+.card-texto p {
+    margin: 0;
+}
+
+.card-rodape {
+    border-top: 1px solid black;
+}
+
+@media (max-width: 767.98px) {
+    .card-container:last-child {
+        margin-top: 1rem;
+    }
+}

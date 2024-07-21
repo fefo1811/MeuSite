@@ -4,7 +4,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-html, body, #home, #exp {
+html, body, #home, #exp, #sobre-mim {
     height: 100%;
 }
 
@@ -17,6 +17,8 @@ body {
     background: url('../image/fundo.png') no-repeat top right;
     background-attachment: fixed;
 }
+
+
 
 /* Header */
 .navbar-toggler {
@@ -58,3 +60,24 @@ h2 {
     border: 2px solid #000;
 }
 /* Home */
+
+/* Sobre Mim */
+
+
+#sobre-mim .texto {
+    margin: 1rem 1rem 0 0;
+    text-align: justify;
+}
+
+#sobre-mim .texto p {
+    margin: 0 0 0.5rem 0;
+}
+
+#sobre-mim .texto span {
+    color: #aaaa42;
+}
+
+#sobre-mim .playlist{
+    padding-top: 4rem;
+}
+/* Sobre Mim */
