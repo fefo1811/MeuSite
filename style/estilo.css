@@ -18,6 +18,10 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 
 /* Header */
@@ -86,5 +90,28 @@ h2 {
 #projetos .container {
     height: 500px;
     display: grid;
+}
+
+#projetos .container .row:first-child {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#projetos .container .row:last-child {
+    row-gap: 1rem;
+}
+
+#projetos .container .row .projeto {
+    transition: transform 0.8s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-15px);
+}
+
+.card-img-overlay {
+    background-color: rgba(82.5, 82.5, 82.5, 0.1);
+    backdrop-filter: blur(2px);
 }
 /* Projetos */
