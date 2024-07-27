@@ -4,7 +4,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-html, body, #home, #exp, #sobre-mim {
+html, body, #home, #exp, #sobre-mim, #projetos {
     height: 100%;
 }
 
@@ -81,3 +81,10 @@ h2 {
     padding-top: 4rem;
 }
 /* Sobre Mim */
+
+/* Projetos */
+#projetos .container {
+    height: 500px;
+    display: grid;
+}
+/* Projetos */
