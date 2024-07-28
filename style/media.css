@@ -16,6 +16,10 @@
     #exp {
         padding: 1rem;
     }
+
+    #projetos .container .row:first-child {
+        text-align: justify;
+    }
 }
 
 @media (max-width: 575.98px) {

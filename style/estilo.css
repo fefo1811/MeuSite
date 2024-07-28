@@ -4,7 +4,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-html, body, #home, #exp, #sobre-mim, #projetos {
+html, body, #home, #exp, #sobre-mim, #projetos, #contato {
     height: 100%;
 }
 
@@ -110,8 +110,29 @@ h2 {
     transform: translateY(-15px);
 }
 
-.card-img-overlay {
+#projetos .card-img-overlay {
     background-color: rgba(82.5, 82.5, 82.5, 0.1);
     backdrop-filter: blur(2px);
 }
+
+#projetos .card-title {
+    font-weight: 900;
+    color: #FF5876;
+}
+
+#projetos .card-text {
+    color: #fff;
+    font-weight: 400;
+}
 /* Projetos */
+
+/* Footer */
+footer {
+    height: 20%;
+    width: 100%;
+    padding: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+}
+/* Footer */
