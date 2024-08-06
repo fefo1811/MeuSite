@@ -39,6 +39,64 @@ a {
     padding-top: 5.62rem;
 }
 
+#apresentacao span {
+    position: relative;
+}
+
+#apresentacao span::before {
+    content: "";
+    animation: palavras 10s infinite;
+}
+
+#apresentacao span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid black;
+    right: -5px;
+    width: calc(100% + 8px);
+    animation: cursor 0.7s infinite, digita 10s steps(12) infinite;
+    background-color: #FFF;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #fff;
+    }
+}
+
+@keyframes palavras {
+    0%, 20% {
+        content: "Desenvolvedor Front-end";
+    }
+
+    21%, 40% {
+        content: "SCSS";
+    }
+
+    41%, 60% {
+        content: "Angular";
+    }
+
+    61%, 80% {
+        content: "Bootstrap";
+    }
+
+    81%, 100% {
+        content: "TypeScript / JavaScript";
+    }
+}
+
 h1 {
     font-size: 2.5em;
     font-weight: 900;
